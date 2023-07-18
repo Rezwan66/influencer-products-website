@@ -76,16 +76,41 @@ h3 {
 .banner-img img{
     width: 100%;
 }
+hr{
+    fill: linear-gradient(135deg, rgba(192, 204, 218, 0.10) 0%, rgba(192, 204, 218, 0.60) 50.38%, rgba(192, 204, 218, 0.10) 100%);
+    width: 1110px;
+    margin: 0 auto;
+}
+.partners{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.partners-1, .partners-2{
+    display: flex;
+    gap: 40px;
+}
+
 
 /* RESPONSIVE STYLES */
 
 @media screen and (max-width: 576px) {
-    nav {
+    nav,
+    .partners {
         flex-direction: column;
         padding: 0;
     }
     .banner{
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .partners-1, .partners-2{
+        justify-content: center;
+        gap: 10px;
+    }
+    hr{
+        display: none;
     }
 }
